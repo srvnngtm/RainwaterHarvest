@@ -15,7 +15,7 @@
 
   #f
   {
-    margin-left: 360px;
+    /* margin-left: 370px; */
 
   }
 
@@ -26,6 +26,12 @@
 	.footicon{
 		color:grey;
 	}
+
+  #border label{
+
+      width: 300px;
+
+  }
 </style>
 
 <script>
@@ -36,7 +42,7 @@ var password=document.myform.pass.value;
 
 
 
-if(name=="s@g.com" && password=="saravanan")
+if(name=="user@gmail.com" && password=="password")
  {
   alert("login authenticated");
   window.open("index.html","_self");
@@ -56,7 +62,7 @@ else{
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-<div  class="container">
+<div class="container">
 																													<!-- navbar-->
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -70,10 +76,10 @@ else{
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#"><span class="glyphicon">&#xe021;</span> Home</a></li>
-                <li><a href="#"><span class="glyphicon">&#xe109;</span> Designs</a></li>
-                <li><a href="https://venom32.github.io/about"><span class="glyphicon">&#xe086;</span> About</a></li>
-                <li><a href="#"><span class="glyphicon">&#xe065;</span> Request connection</a></li>
+                <li class="active"><a href="#"><span class="glyphicon"></span> Home</a></li>
+                <li><a href="#"><span class="glyphicon"></span> Designs</a></li>
+                <li><a href="https://venom32.github.io/about"><span class="glyphicon"></span> About</a></li>
+                <li><a href="#"><span class="glyphicon"></span> Request connection</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -89,22 +95,39 @@ else{
         </div>
 
 
-
-        <div class="container">
-                  <img src="https://www.dhs.gov/sites/default/files/images/REAL-ID_icon_public.png" alt="">
+      <div id="border" style="
+    width: fit-content;
+    text-align:  center;
+    margin: auto;
+    border: 2px solid black;
+    margin-bottom: 10px;
+">
+        <div style="
+    /* margin: auto; */
+">
+                  <img src="https://www.dhs.gov/sites/default/files/images/REAL-ID_icon_public.png" alt="" style="
+    /* text-align:  center; */
+    display:  block;
+    /* margin: auto; */
+">
         </div>
-
-
-
-<div id="f" class="container text-center">
-
-
-        <div class="col-sm-4">
-         <form name="myform" method="post" class="form-group" onsubmit="return validateform()">
+      <div style="
+    text-align:  center;
+    margin:  0 auto;
+">
+      <form name="myform" method="post" class="form-group" onsubmit="return validateform()" style="
+    text-align:  center;
+">
       <label for="userid">Email</label>
-      <input class="form-control" type="email" name="userid" placeholder="email" required>
+      <input class="form-control" type="email" name="userid" placeholder="email" required="" style="
+    width: 326px;
+    margin: auto;
+">
       <label for="pass">password</label>
-      <input class="form-control" type="password" name="pass" placeholder="password" required>
+      <input class="form-control" type="password" name="pass" placeholder="password" required="" style="
+    width: 326px;
+    margin: auto;
+">
 
       <div class="checkbox">
       <label for="check">
@@ -112,17 +135,12 @@ else{
       Keep me logged in</label>
       </div>
 
-      <div >
-      <button class="btn btn-success"type="submit" name="button" value="register">Submit</button>
-      </div>
+
+      <button class="btn btn-success" type="submit" name="button" value="register">Submit</button>
+      </form>
 
 
-
-
-     </form>
-
-    </div>
-
+   </div>
         </div>
 
 
@@ -131,8 +149,8 @@ else{
 
         </div></div>
     </div>
-</div>
-<footer >                                                                                                        <!--footer -->
+
+<footer>                                                                                                        <!--footer -->
 
 <div class="container" bg-color="red">
         <div class="row" align="center">
@@ -150,5 +168,7 @@ else{
         <a href="#"> #HASH </a>
     </div>
 </footer>
+
+
 </body>
 </html>
