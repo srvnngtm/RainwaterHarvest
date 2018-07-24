@@ -12,6 +12,13 @@
 
 
 <style>
+
+  #f
+  {
+    margin-left: 360px;
+
+  }
+
 	.foot{
   font-size: 40px;
   background-color: black;
@@ -21,12 +28,12 @@
 	}
 </style>
 
-<script>  
-function validateform(){  
-var name=document.myform.userid.value;  
-var password=document.myform.pass.value;  
-  
- 
+<script>
+function validateform(){
+var name=document.myform.userid.value;
+var password=document.myform.pass.value;
+
+
 
 
 if(name=="s@g.com" && password=="saravanan")
@@ -40,16 +47,16 @@ else{
   return false;
 }
 
-}  
-</script>  
- 
+}
+</script>
+
 
 </head>
 <body>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-<div class="container">
+<div  class="container">
 																													<!-- navbar-->
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -78,9 +85,19 @@ else{
   	                                                                                                         		<!-- panel -->
     <div class="row">
         <div class="col-sm-4">
-           
+
         </div>
-        
+
+
+
+        <div class="container">
+                  <img src="https://www.dhs.gov/sites/default/files/images/REAL-ID_icon_public.png" alt="">
+        </div>
+
+
+
+<div id="f" class="container text-center">
+
 
         <div class="col-sm-4">
          <form name="myform" method="post" class="form-group" onsubmit="return validateform()">
@@ -99,15 +116,18 @@ else{
       <button class="btn btn-success"type="submit" name="button" value="register">Submit</button>
       </div>
 
-  </form>
 
 
+
+     </form>
+
+    </div>
 
         </div>
-				
+
 
         <div class="col-sm-4">
-              
+
 
         </div></div>
     </div>
@@ -121,7 +141,7 @@ else{
                    <a href="#"> <i class="fab fa-github footicon"></i></a>
                    <a href="#"> <i class="fab fa-google-plus-square footicon"></i></a>
                    <a href="#"> <i class="fab fa-twitter-square footicon"></i></a>
-                   <a href="#"> <i class="fab fa-youtube footicon"></i></a> 
+                   <a href="#"> <i class="fab fa-youtube footicon"></i></a>
             </div>
         </div>
     </div>
