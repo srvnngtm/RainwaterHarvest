@@ -106,16 +106,18 @@ background-color: black;
   {
 
 
-      var x = document.getElementById("myInput1").value;
-      x = parseInt(x);
 
     var y = document.getElementById("myInput2").value;
       y = parseInt(y);
+      var x = document.getElementById("myInput1").value;
+      x = parseInt(x);
+
       var z =  x * y ;
           z= z* 0.623;
+          z=z*3.78545;
 
       if(!isNaN(z))
-      document.getElementById("demo").innerHTML = "Total Rainwater Collection Potential: " + z +" gallons";
+      document.getElementById("demo").innerHTML = "Total Rainwater Collection Potential: " + z +" litres";
 
   }
   </script>
